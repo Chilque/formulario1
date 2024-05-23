@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formularios</title>
+</head>
+<body>
+    <h1> Registro de la cancion para el concurso</h1>
+    <form action="#" name="envio_datos">
+        <h5 style="background-color: #c3f901;">Datos del usuario</h5>
+        <label for="Nombres">Nombres</label>
+        <input type="text" name="Nombres" id="Nombres" placeholder="Ingrese sus Nombres">
+
+        <label for="password">password</label>
+        <input type="password" name="password" id="password" placeholder="Ingrese su Password">
+
+        <br>
+        <label for="Sexo">Seleccione su Sexo</label><br>
+        <input type="radio" name="Sexo" value="Masculino"> Masculino <br>
+        <input type="radio" name="Sexo" value="Femenino"> Femenino <br>
+
+        <label for="Pais">Pais</label>
+        <select name="Pais" id="Pais">
+            <option value="Peru">Peru</option>
+            <option value="Colombia">Colombia</option>
+            <option value="Argentina">Argentina</option>
+            <option value="Chile">Chile</option>
+        </select>
+        <br>
+        <h5 style="background-color: #c3f901;">Datos de la musica</h5>
+        <label for="tipo_musica"><b>Seleccione el tipo de musica</b></label><br>
+        <input type="checkbox" name="musica" value="Clasica">Clasica<br>
+        <input type="checkbox" name="musica" value="Pop">Pop<br>
+        <input type="checkbox" name="musica" value="Rock">Rock<br>
+
+        <label for="Archivo">Seleccione la cancion a enviar</label>
+        <input type="file" name="Archivo">
+
+        <br>
+
+        <label for="Mensaje">Ingrese un Mensaje</label><br>
+        <textarea name="Mensaje" id="Mensaje" cols="30" rows="10"></textarea><br>
+
+        <input type="submit" value="Enviar">
+        <input type="reset" value="Limpiar">
+        <button type="button" onclick="alert('Hola Mundo')">Saludo</button>
+    </form>
+    
+</body>
+</html>
